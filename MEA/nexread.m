@@ -1,5 +1,7 @@
-function sp = nexread2019(filename)
-% script for importing spike data from txt file
+% By Daniel Kerschensteiner 2019
+
+function sp = nexread(filename)
+% script for importing spike data from txt file exported from Neuroexplorer
 
 fid = fopen(filename, 'rt');
 
