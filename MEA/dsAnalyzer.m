@@ -1,7 +1,6 @@
 % This script uses as input the file saves from dsParser.m. It computes
 % direction selectivity indices (dsi) and preferred stimulus directions
 % (pref). It classifies cells as ds and non-ds.
-% 
 
 %% LOAD DS_... file
 [filename, pathname] = uigetfile ('*.mat', 'Select DS_... file');
@@ -49,7 +48,7 @@ end
 %% IDENTIFY DSGCs
 for i=1:nChannels
     if ~isempty(ds(i).drift)
-        maxRate = squeeze(max(ds(i).rate)); %maybe squeeze
+        maxRate = squeeze(max(ds(i).rate));
         testIdx = maxRate > rateThresh;
         if isempty(testIdx)
             ds(i).type = 'non-DS';
