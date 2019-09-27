@@ -2,6 +2,8 @@
 % them according drifiting grating stimuli of varying wavelength, speed, and
 % direction.
 
+% By Daniel Kerschensteiner 2019
+
 %% LOADING FILES & DEFINING PATH FOR SAVING PARSED DATA
 % load spike data from a txt file exported from Neuroexplorer
 [fileName, pathName] = uigetfile('*.txt','Select TXT_ file');
