@@ -2,6 +2,8 @@
 % direction selectivity indices (dsi) and preferred stimulus directions
 % (pref). It classifies cells as ds and non-ds.
 
+% By Daniel Kerschensteiner 2019
+
 %% LOAD DS_... file
 [filename, pathname] = uigetfile ('*.mat', 'Select DS_... file');
 load([pathname filename])
